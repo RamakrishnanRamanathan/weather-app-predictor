@@ -1,6 +1,6 @@
 #### Weather Predictor App
 
->live:[https://github.com/RamakrishnanRamanathan/weather-app-predictor](https://github.com/RamakrishnanRamanathan/weather-app-predictor)
+>live:[https://ramakrishnanramanathan.github.io/weather-app-predictor/](https://ramakrishnanramanathan.github.io/weather-app-predictor/)
 
 ### Screenshot
 
