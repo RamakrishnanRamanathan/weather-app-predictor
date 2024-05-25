@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
 
-    <!-- TailwindCSS -->
-    <link rel="stylesheet" href="./assets/css/index.css" />
-  </head>
-  <body>
-    <!-- Write your HTML here -->
-    <div id="app" class="text-3xl font-bold">Hello Vite HTML & Tailwind!</div>
-    <script type="module" src="./assets/js/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <!-- TailwindCSS -->
+  <link rel="stylesheet" href="./assets/css/index.css" />
+</head>
+
+<body class="body">
+  <div class=" max-w-96 bg-gradient-to-l from-sky-500 to-slate-400 px-4 py-3 rounded space-y-24">
+    <div class="navbar">
+      <input type="search" placeholder="enter the city" class="inputSearch" id="inputsearch">
+
+      <button class="searchIcon" id="btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14" />
+        </svg>
+      </button>
+    </div>
+    <div class="imgSection">
+      <div class="img">
+        <img src="./assets/images/sunny.png" alt="weathehr image" class="w-32 h-32" id="imgsrc" />
+      </div>
+      <div class="infoName">
+        <p class="temp" id="tempDegree">22°c</p>
+        <span class="temp" id="cityname">Bengaluru</span>
+      </div>
+    </div>
+    <div class="flex justify-around mt-10">
+      <div class="humidity">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M10 22q-3.325 0-5.663-2.3T2 14.1q0-1.575.613-3.012T4.35 8.55L10 3l5.65 5.55q1.125 1.1 1.738 2.538T18 14.1q0 3.3-2.337 5.6T10 22Zm8.5-12q0-1.875-1.313-3.188T14 5.5q1.875 0 3.188-1.313T18.5 1q0 1.875 1.313 3.188T23 5.5q-1.875 0-3.188 1.313T18.5 10Z" />
+          </svg>
+        </div>
+        <div class="flex-1 text-white">
+          <p class="font-semibold text-lg" id="humidityPercentage">30%</p>
+          <p class="font-semibold">Humidity</p>
+        </div>
+      </div>
+      <div class="humidity">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 8h8.5a2.5 2.5 0 1 0-2.34-3.24M3 12h15.5a2.5 2.5 0 1 1-2.34 3.24M4 16h5.5a2.5 2.5 0 1 1-2.34 3.24" />
+          </svg>
+        </div>
+        <div class="flex-1 text-white">
+          <p class="font-semibold text-lg" id="windSpeed">55 Km/h</p>
+          <p class="font-light">Wind Speed</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+
 </html>

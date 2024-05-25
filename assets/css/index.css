@@ -2,3 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+.body {
+  @apply bg-slate-900 max-w-xl  px-5 py-3  m-10 flex justify-center mx-auto;
+}
+.navbar {
+  @apply flex px-5 py-3 justify-center cursor-pointer items-center;
+}
+.inputSearch {
+  @apply px-3 py-1 w-full  rounded hover:bg-gray-100  outline-none;
+}
+.searchIcon {
+  @apply ml-2;
+}
+.img {
+  @apply flex justify-center items-center;
+}
+.temp {
+  @apply flex justify-center items-center text-white;
+}
+.humidity {
+  @apply flex items-center space-x-3;
+}
