@@ -22,11 +22,11 @@ try {
     humdityPercentage.innerText = `${data.main.humidity}%`;
     windSpeed.innerText = `${Math.round(data.wind.speed * 3.6)}km/h`;
     if (data.weather[0].main == "Rain" || data.weather[0].main == "Haze") {
-      weatherImage.src = "weather-app-predictor/assets/images/rainy2.png";
+      weatherImage.src = "./assets/images/rainy2.png";
     } else if (data.weather[0].main == "Clouds") {
-      weatherImage.src = "weather-app-predictor/assets/images/cloudy.png";
+      weatherImage.src = "./assets/images/cloudy.png";
     } else {
-      weatherImage.src = "weather-app-predictor/assets/images/sunny.png";
+      weatherImage.src = "./assets/images/sunny.png";
     }
     return data;
   }
