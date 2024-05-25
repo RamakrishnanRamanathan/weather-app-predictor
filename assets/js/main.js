@@ -22,7 +22,7 @@ try {
     humdityPercentage.innerText = `${data.main.humidity}%`;
     windSpeed.innerText = `${Math.round(data.wind.speed * 3.6)}km/h`;
     if (data.weather[0].main == "Rain" || data.weather[0].main == "Haze") {
-      weatherImage.src = "assets/images/rainy2.PNG"
+      weatherImage.src = "assets/images/rainy2.png"
     } else if (data.weather[0].main == "Clouds") {
       weatherImage.src = "assets/images/cloudy.png"
     }else{
