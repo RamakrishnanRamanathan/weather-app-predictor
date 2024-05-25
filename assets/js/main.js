@@ -25,6 +25,8 @@ try {
       weatherImage.src = "./assets/images/rainy2.png";
     } else if (data.weather[0].main == "Clouds") {
       weatherImage.src = "./assets/images/cloudy.png";
+    }else{
+      weatherImage.src="./assets/images/sunny.png"
     }
     return data;
   };
